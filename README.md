@@ -2,8 +2,25 @@
 将OCR开源项目 PaddleOCR-JSON（ https://github.com/hiroi-sora/PaddleOCR-json ）封装为.NET环境调用的开源库，支持 .NET Framework和.NET Core，运行环境必须是x64.
 
 ### 1. 添加引用
-项目——引用——将PaddleOCRJsonDotNet.dll引用到项目中。
-<img width="1197" height="590" alt="image" src="https://github.com/user-attachments/assets/3185e23a-6c37-474b-823e-9ee3e8da7acc" />
+将PaddleOCRJsonDllTest项目下Debug活Release中的下列文件或文件夹复制到目标项目Debug活Release下：
+```
+api-ms-win-core-processtopology-obsolete-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+common.dll
+common.dll.manifest
+concrt140.dll
+libiomp5md.dll
+mkldnn.dll
+mklml.dll
+onnxruntime.dll
+opencv_world4100.dll
+paddle_inference.dll
+PaddleOCRJson.dll
+PaddleOCRJsonDotNet.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+文件夹：models
+```
+并将PaddleOCRJsonDotNet.dll引入到目标项目中【项目——引用——将PaddleOCRJsonDotNet.dll引用到项目中】。
 
 
 ### 2.模型路径和名称，路径可以按照自己的需要修改：
